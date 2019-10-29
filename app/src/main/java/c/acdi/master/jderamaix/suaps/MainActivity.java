@@ -597,7 +597,8 @@ public class MainActivity extends AppCompatActivity implements InterfaceDecouver
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.configurerCours:
-                configurerCours(null);
+                //configurerCours(null);
+                Codepin(null);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -872,8 +873,11 @@ public class MainActivity extends AppCompatActivity implements InterfaceDecouver
             }
         });
     }
+            //Méthode appel dialogue Pin
 
-
+            public void Codepin(View view) {
+                new PinDialog().show(getSupportFragmentManager(),"PinClasse");
+            }
 
 }
 
