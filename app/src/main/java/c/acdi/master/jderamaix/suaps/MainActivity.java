@@ -584,7 +584,7 @@ public class MainActivity extends AppCompatActivity implements InterfaceDecouver
      * */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.config_menu, menu);
+        getMenuInflater().inflate(R.menu.cours_menu, menu);
         return true;
     }
 
@@ -598,6 +598,18 @@ public class MainActivity extends AppCompatActivity implements InterfaceDecouver
         switch (item.getItemId()) {
             case R.id.configurerCours:
                 configurerCours(null);
+                return true;
+            case R.id.calendar:
+                    Toast msg = Toast.makeText(this,"Calendar page",Toast.LENGTH_LONG);
+                    msg.show();
+                return true;
+            case R.id.synchron:
+                Toast msg2 = Toast.makeText(this,"Synchron page",Toast.LENGTH_LONG);
+                msg2.show();
+                return true;
+            case R.id.setting:
+                Toast msg3 = Toast.makeText(this,"Setting page",Toast.LENGTH_LONG);
+                msg3.show();
                 return true;
         }
         return super.onOptionsItemSelected(item);
