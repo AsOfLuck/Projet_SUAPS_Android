@@ -597,8 +597,8 @@ public class MainActivity extends AppCompatActivity implements InterfaceDecouver
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.configurerCours:
-                //configurerCours(null);
-                Codepin(null);
+                configurerCours(null);
+                //Codepin(null);
                 return true;
         }
         return super.onOptionsItemSelected(item);
